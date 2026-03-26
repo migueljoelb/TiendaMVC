@@ -6,7 +6,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 
-> Aplicación web CRUD desarrollada como trabajo final de curso, utilizando el patrón **MVC** con **ASP.NET Core** y **Entity Framework Core** con enfoque **Database First**.
+> Aplicación web CRUD desarrollada como trabajo final de la universidad, utilizando el patrón **MVC** con **ASP.NET Core** y **Entity Framework Core** con enfoque **Database First**.
 
 ---
 
@@ -64,59 +64,8 @@ TiendaMVC/
 ## ⚙️ Requisitos Previos
 
 - [Visual Studio 2022+](https://visualstudio.microsoft.com/)
-- [SQL Server](https://www.microsoft.com/sql-server) o SQL Server Express
+- [SQL Server](https://www.microsoft.com/sql-server)
 - [.NET 8 SDK](https://dotnet.microsoft.com/download)
-
----
-
-## 🚀 Instalación y Configuración
-
-**1. Clona el repositorio**
-```bash
-git clone https://github.com/tu-usuario/TiendaMVC.git
-```
-
-**2. Crea la base de datos en SQL Server Management Studio**
-```sql
-CREATE DATABASE TiendaDB;
-GO
-USE TiendaDB;
-GO
-CREATE TABLE Productos (
-    ProductoID   INT IDENTITY(1,1) PRIMARY KEY,
-    Nombre       NVARCHAR(100) NOT NULL,
-    Descripcion  NVARCHAR(255),
-    Precio       DECIMAL(10,2) NOT NULL,
-    Stock        INT NOT NULL,
-    FechaIngreso DATE NOT NULL
-);
-```
-
-**3. Configura la cadena de conexión en `appsettings.json`**
-```json
-"ConnectionStrings": {
-  "TiendaDB": "Server=localhost;Database=TiendaDB;Trusted_Connection=True;TrustServerCertificate=True;"
-}
-```
-
-**4. Ejecuta el proyecto**
-```
-Presiona F5 en Visual Studio
-```
-
----
-
-## 📐 Patrón MVC
-
-```
-Usuario → Controlador → Modelo → Base de Datos
-                ↓
-             Vista → Usuario
-```
-
-- **Modelo** — `Producto.cs` define la estructura de datos
-- **Vista** — Archivos `.cshtml` muestran la interfaz
-- **Controlador** — `ProductosController.cs` gestiona las solicitudes
 
 ---
 
@@ -126,4 +75,4 @@ Desarrollado como trabajo final de curso universitario.
 
 ---
 
-> 📚 *Proyecto académico — Curso de Desarrollo Web*
+> 📚 *Proyecto académico — Programacion III*
